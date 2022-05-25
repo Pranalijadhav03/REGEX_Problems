@@ -19,7 +19,7 @@ namespace RegexPatternProblems
                 Console.WriteLine();
                 Console.WriteLine("\t-->Select To Programs Which can be executed<--");
 
-                Console.WriteLine("\t1.Enter First Name \n\t2.Enter Last Name \n\t3.Enter Your Emali Id \n\t4.Enter Your Mobile Number \n\t5.Exit");
+                Console.WriteLine("\t1.Enter First Name \n\t2.Enter Last Name \n\t3.Enter Your Emali Id \n\t4.Enter Your Mobile Number n\t5.Enter Your Passwrd \n\t6.Exit");
                 Console.Write("\tEnter Numbers: ");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -45,6 +45,11 @@ namespace RegexPatternProblems
                         pattern.CheckMobileNumber();//Call the Method.
                         break;
                     case 5:
+                        //Validating user entered a valid Passwrd or not (UC5&UC6)
+                        Console.WriteLine("\tEnter Your Passwrd: ");
+                        pattern.CheckPasswrd(); //Call the Method.
+                        break;
+                    case 6:
                         flag = false;
                         break;
                     default:
